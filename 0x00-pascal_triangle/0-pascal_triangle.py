@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-"""0-pascal_triangle"""
+"""function that returns
+a list of lists of integers"""
 
 
 def pascal_triangle(n):
     """pascal triange
-    Args:
-        n (integer): number of rows
-
-    Returns:
-        list: pascal triangle
     """
     res = [[1]]
     if n <= 0:
