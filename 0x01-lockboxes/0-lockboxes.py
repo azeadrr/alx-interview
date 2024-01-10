@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-method that determines if all boxes
+that determines if all boxes
 """
 
 def canUnlockAll(boxes):
