@@ -3,6 +3,7 @@
 determines if all boxes can be opened
 """
 
+
 def canUnlockAll(boxes):
     """
     0. Lockboxes
@@ -13,9 +14,9 @@ def canUnlockAll(boxes):
         return True
     keys = [0]
     for key in keys:
-        for new_key in boxes[key]:
-            if new_key not in keys and new_key < len(boxes):
-                keys.append(new_key)
+        for nkey in boxes[key]:
+            if nkey not in keys and nkey < len(boxes):
+                keys.append(nkey)
     if len(keys) == len(boxes):
         return True
     return False
