@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-that determines if all boxes
+determines if all boxes can be opened
 """
 
 def canUnlockAll(boxes):
@@ -13,9 +13,9 @@ def canUnlockAll(boxes):
         return True
     keys = [0]
     for key in keys:
-        for nkey in boxes[key]:
-            if nkey not in keys and nkey < len(boxes):
-                keys.append(nkey)
+        for new_key in boxes[key]:
+            if new_key not in keys and new_key < len(boxes):
+                keys.append(new_key)
     if len(keys) == len(boxes):
         return True
     return False
